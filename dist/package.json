@@ -1,6 +1,6 @@
 {
-  "name": "npm-publish-test-circle-auto",
-  "version": "0.9.2",
+  "name": "@andreajl/npm-publish-test-circle-auto",
+  "version": "0.9.10",
   "description": "An example package for a tutorial.",
   "scripts": {
     "start": "echo ⛵️",
@@ -13,5 +13,9 @@
   "private": false,
   "devDependencies": {
     "standard-version": "^8.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreajl/npm-publish-test.git"
   }
 }
