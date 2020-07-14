@@ -1,0 +1,9 @@
+{
+  "name": "npm-publish-test",
+  "version": "0.9.0",
+  "description": "An example package for a tutorial.",
+  "scripts": {
+    "start": "echo ⛵️"
+  },
+  "private": false
+}

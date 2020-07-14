@@ -1,0 +1,11 @@
+version: 2.1
+
+orb:
+  ardoqDev: ardoq/orby@dev:alpha
+  ardoq: ardoq/orby@0.1.3
+
+workflows:
+  main:
+    jobs:
+      - ardoqDev/npm-publish:
+          folder: dist
