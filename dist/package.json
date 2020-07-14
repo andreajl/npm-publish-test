@@ -1,9 +1,17 @@
 {
-  "name": "npm-publish-test",
-  "version": "0.9.0",
+  "name": "npm-publish-test-circle-auto",
+  "version": "0.9.1",
   "description": "An example package for a tutorial.",
   "scripts": {
-    "start": "echo ⛵️"
+    "start": "echo ⛵️",
+    "release": "standard-version",
+    "deploy": "yarn deploy:patch",
+    "deploy:patch": "yarn release --release-as patch && git push --follow-tags origin master",
+    "deploy:minor": "yarn release --release-as minor && git push --follow-tags origin master",
+    "deploy:major": "yarn release --release-as major && git push --follow-tags origin master"
   },
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "standard-version": "^8.0.2"
+  }
 }
